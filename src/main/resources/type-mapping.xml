@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mappings>
+    <mapping dbms="PostgreSQL">
+        <type source="BIT" target="BIT"/>
+        <type source="TINYINT" target="SMALLINT"/>
+        <type source="SMALLINT" target="SMALLINT"/>
+        <type source="INTEGER" target="INTEGER"/>
+        <type source="BIGINT" target="BITINT"/>
+        <type source="CHAR" target="CHARACTER"/>
+        <type source="VARCHAR" target="CHARACTER VARYING"/>
+        <type source="LONGVARCHAR" target="CHARACTER VARYING"/>
+        <type source="BINARY" target="BYTEA"/>
+        <type source="VARBINARY" target="BYTEA"/>
+        <type source="LONGVARBINARY" target="BYTEA"/>
+        <type source="BLOB" target="BYTEA"/>
+        <type source="CLOB" target="TEXT"/>
+        <type source="FLOAT" target="REAL"/>
+        <type source="DOUBLE" target="DOUBLE PRECISION"/>
+        <type source="DECIMAL" target="NUMERIC"/>
+        <type source="NUMERIC" target="NUMERIC"/>
+        <type source="TIME" target="TIME WITHOUT TIME ZONE"/>
+        <type source="DATE" target="DATE"/>
+        <type source="TIMESTAMP" target="TIMESTAMP WITHOUT TIME ZONE"/>
+        <type source="REAL" target="REAL"/>
+    </mapping>
+
+</mappings>
