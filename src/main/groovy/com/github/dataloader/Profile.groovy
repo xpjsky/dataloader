@@ -1,7 +1,4 @@
 package com.github.dataloader
-
-import com.github.dataloader.rdbms.Database
-
 /**
  * Created by pxie on 1/17/16.
  */
@@ -11,7 +8,6 @@ class Profile {
 
     String type
 
-    Database[] databases
-
+    List<Database> databases
 
 }

@@ -1,4 +1,4 @@
-package com.github.dataloader.dumper
+package com.github.dataloader
 
 import com.github.dataloader.Profile
 

@@ -1,4 +1,6 @@
-package com.github.dataloader.rdbms
+package com.github.dataloader
+
+import com.github.dataloader.rdbms.metadata.Schema
 
 import java.sql.Connection
 import java.sql.DatabaseMetaData
@@ -9,6 +11,8 @@ import java.sql.ResultSet
  * Created by pxie on 1/14/16.
  */
 class Database {
+
+    DBType type
 
     Schema[] schemas
 

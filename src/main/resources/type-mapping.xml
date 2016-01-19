@@ -5,7 +5,7 @@
         <type source="TINYINT" target="SMALLINT"/>
         <type source="SMALLINT" target="SMALLINT"/>
         <type source="INTEGER" target="INTEGER"/>
-        <type source="BIGINT" target="BITINT"/>
+        <type source="BIGINT" target="BIGINT"/>
         <type source="CHAR" target="CHARACTER"/>
         <type source="VARCHAR" target="CHARACTER VARYING"/>
         <type source="LONGVARCHAR" target="CHARACTER VARYING"/>

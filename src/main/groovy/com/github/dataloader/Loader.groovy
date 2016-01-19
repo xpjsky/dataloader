@@ -1,4 +1,4 @@
-package com.github.dataloader.loader
+package com.github.dataloader
 
 import com.github.dataloader.Profile
 
