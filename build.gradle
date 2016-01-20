@@ -13,6 +13,7 @@ repositories {
 dependencies {
 
     compile localGroovy()
+    compile gradleApi()
 
     // JDBC Drivers
     compile "org.postgresql:postgresql:9.4.1207"
@@ -26,4 +27,8 @@ task wrapper(type: Wrapper) {
     gradleVersion = '2.10'
     scriptFile = 'bin/gdl'
     jarFile = 'bin/wrapper/gradle-wrapper.jar'
+}
+
+task 'USER' {
+
 }

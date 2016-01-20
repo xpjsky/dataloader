@@ -19,7 +19,7 @@ class SelectColumnType {
         column
     }
 
-    def integer() {
+    def getInteger() {
         column.type = DataTypes.INTEGER
         column
     }

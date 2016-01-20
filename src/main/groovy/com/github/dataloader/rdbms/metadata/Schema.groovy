@@ -11,17 +11,17 @@ import com.github.dataloader.rdbms.metadata.View
  */
 class Schema {
 
-    private String name;
+    String name;
 
-    private List<Table> tables;
+    List<Table> tables = [];
 
-    private List<View> views;
+    List<View> views = [];
 
-    private List<Function> functions;
+    List<Function> functions = [];
 
-    private List<Procedure> procedures;
+    List<Procedure> procedures = [];
 
-    private List<Trigger> triggers;
+    List<Trigger> triggers = [];
 
 
 }

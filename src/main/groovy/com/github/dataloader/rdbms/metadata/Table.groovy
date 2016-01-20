@@ -21,6 +21,10 @@ class Table {
         return new SelectColumnType(column)
     }
 
+    def as1(Closure c) {
+
+    }
+
 }
 
 class PrimaryKey extends Constraint {

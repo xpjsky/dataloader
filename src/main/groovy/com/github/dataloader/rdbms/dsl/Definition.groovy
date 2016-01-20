@@ -1,41 +1,19 @@
 package com.github.dataloader.rdbms.dsl
 
-import com.github.dataloader.rdbms.metadata.Table
+import org.omg.PortableInterceptor.USER_EXCEPTION
 
-class SimpleBinding extends Binding {
-    @Override
-    void setProperty(String property, Object newValue) {
-        super.setProperty(property, newValue)
-    }
+
+table 'USER' is {
+    column 'id' integer
+    column 'name' varchar(40) unique() not_null() default_value 'your name'
 }
 
-
-class DSLScript extends Script {
-
-    def table(String tableName, Closure definition) {
-        Table table = new Table(name: tableName)
-        definition.delegate = table
-        definition()
-
-        return table
-    }
-
-    @Override
-    Object run() {
-        def table = table 'USER',{
-            column 'id' integer()
-            column 'name' varchar(40) unique() not_null() default_value 'your name'
-        }
-
-        println table
-
-        table
-    }
-
-}
-
+view 'USER_VW' is """
+    select * from USER_VW
+    where name like 'xie'
+"""
 //
-//table 'USER' {
+//table 'USER' : {
 //    column 'id' 'float'
 //    column 'name' varchar(40) unique NOT NULL default_value 3;
 //    column 'age' integer
